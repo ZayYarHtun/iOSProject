@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    // Added in development repo
+    // Added in developmentphase1 repo
     @IBOutlet weak var tblSample: UITableView!
     
     private var data = ["0", "1", "2", "3", "4", "5", "6", "7", "8","0", "1", "2", "3", "4", "5", "6", "7", "8", "0", "1", "2", "3", "4", "5", "6", "7", "8","0", "1", "2", "3", "4", "5", "6", "7", "8"]
