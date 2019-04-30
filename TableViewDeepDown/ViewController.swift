@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
+    // Added in developmentPhase1 repo lay pr
     @IBOutlet weak var tblSample: UITableView!
     
     private var data = ["0", "1", "2", "3", "4", "5", "6", "7", "8","0", "1", "2", "3", "4", "5", "6", "7", "8", "0", "1", "2", "3", "4", "5", "6", "7", "8","0", "1", "2", "3", "4", "5", "6", "7", "8"]
@@ -23,7 +23,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "my", for: indexPath) as? MyTableViewCell
         if indexPath.row == 0 {
-            cell?.lbl.text = data[indexPath.row];
+            cell?.lbl.text = "data[indexPath.row]";
         }
 
         return cell!
