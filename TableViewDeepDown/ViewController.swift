@@ -22,7 +22,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "my", for: indexPath) as? MyTableViewCell
-        cell?.lbl.text = data[indexPath.row]; // cell set data
+        cell?.lbl.text = data[indexPath.row]; // cell set data for label
         return cell!
     }
 
