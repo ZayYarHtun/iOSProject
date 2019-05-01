@@ -22,7 +22,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "my", for: indexPath) as? MyTableViewCell
-        cell?.lbl.text = data[indexPath.row]; // cell set data for label
+        cell?.lbl.text = data[indexPath.row]; // cell set data for label blah blah
         return cell!
     }
 
@@ -31,6 +31,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1;
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("\(indexPath.row)")
     }
     
   
